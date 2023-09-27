@@ -66,6 +66,7 @@ document.querySelector("#panel-bottom").addEventListener("click",function(dets){
         getNewHit();
     }
 });
-runTimer();
+// runTimer();
 makeBubble();
 getNewHit();
+// runTimer();

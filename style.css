@@ -101,3 +101,120 @@ html,body{
     cursor: pointer;
     background-color:rgb(29, 88, 40) ;
 }
+
+@media screen and (max-width:1255px) {
+
+    .bubble{
+    
+    width: 55px;
+    height: 55px;
+    font-weight: 400;
+    }
+
+.elem{
+   gap: 15px;
+}
+.elem h2{
+    font-size: 23px;
+}
+.box{
+    padding: 9px 15px;
+    
+}
+}
+@media screen and (max-width:1180px) {
+    .bubble{
+        width: 50px;
+        height: 50px;
+        font-weight: 300;
+    }
+    
+.elem{
+    gap: 15px;
+ }
+ .elem h2{
+     font-size: 20px;
+ }
+ .box{
+    font-size: 20px;
+     padding: 7px 10px;
+     
+ }
+}
+@media screen and (max-width:920px) {
+    .bubble{
+        width: 45px;
+        height: 45px;
+        font-weight: 100;
+    }
+.elem{
+    gap: 10px;
+ }
+ .elem h2{
+     font-size: 18px;
+ }
+ .box{
+    font-size: 18px;
+     padding: 7px 10px;
+     
+ }
+}
+
+@media screen and (max-width:770px) {
+    
+    .bubble{
+        width: 40px;
+        height: 40px;
+        font-weight: 50;
+    }
+.elem{
+    gap: 9px;
+ }
+ .elem h2{
+     font-size: 16px;
+ }
+ .box{
+    font-size: 15px;
+     padding: 5px 8px;
+     
+ }
+}
+
+@media screen and (max-width:640px) {
+    
+    .bubble{
+        width: 36px;
+        height: 36px;
+        font-weight: 30;
+    }
+.elem{
+    gap: 7px;
+ }
+ .elem h2{
+     font-size: 15px;
+ }
+ .box{
+    font-size: 14px;
+     padding: 4px 7px;
+     
+ }
+}
+@media screen and (max-width:590px) {
+    
+    .bubble{
+        width: 32px;
+        height: 32px;
+        font-weight: 35;
+    }
+.elem{
+    gap: 6px;
+ }
+ .elem h2{
+     font-size: 13px;
+ }
+ .box{
+    font-size: 13px;
+     padding: 2px 6px;
+     
+ }
+}
