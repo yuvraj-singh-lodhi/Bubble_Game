@@ -69,4 +69,4 @@ document.querySelector("#panel-bottom").addEventListener("click",function(dets){
 // runTimer();
 makeBubble();
 getNewHit();
-// runTimer();
+runTimer();
