@@ -21,6 +21,9 @@ for(var i=1;i<103;i++)
 }
 document.querySelector("#panel-bottom").innerHTML = clutter;
 }
+
+
+
 function runTimer(){
    var timerint= setInterval(function(){
         if(timer>0){
@@ -30,12 +33,30 @@ function runTimer(){
         else{
             
             clearInterval(timerint);
-            document.querySelector("#panel-bottom").innerHTML = `<h1>Game Over<h1>`
+            document.querySelector("#panel-bottom").innerHTML = `<h1 id="gameover">Game Over</h1> <br/><h1 id="Score">Your Score = ${score}</h1>  <br/><button id="retry">Retry</button>`
+            document.querySelector("#retry").addEventListener("click",function(button){
+                
+                console.log(button.target.textContent);
+                var clicktry  = button.target.textContent;
+                if(clicktry = "Retry"){
+                        makeBubble();
+                        getNewHit();
+                        score= -10;
+                        increaseScore();
+                        timer=31;
+                        runTimer();
+                }
+                else{
+                    clearInterval(timerint);   
+                   
+                }
+                });
             
         }
 
     },1000);
 }
+
 
 document.querySelector("#panel-bottom").addEventListener("click",function(dets){
     var clickedNum= Number(dets.target.textContent);
