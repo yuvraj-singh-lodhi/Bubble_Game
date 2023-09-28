@@ -1,4 +1,4 @@
-var timer = 30;
+var timer = 10;
 var score =0;
 var hitrn =0;
 
@@ -11,6 +11,7 @@ function getNewHit(){
     hitrn = Math.floor(Math.random()*10);
     document.querySelector("#hitvalue").textContent =hitrn;
 }
+
 function makeBubble(){
     var clutter = "";
 
